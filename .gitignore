@@ -4,8 +4,11 @@ include
 lib
 local
 pip-selfcheck.json
+<<<<<<< HEAD
 log
 .heroku
 .profile.d/
 .release
+=======
+>>>>>>> packaging script
 tags
