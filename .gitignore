@@ -4,3 +4,8 @@ include
 lib
 local
 pip-selfcheck.json
+log
+.heroku
+.profile.d/
+.release
+tags
