@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 set -e
 
-cacheRoot=/tmp
-environment="'HOME=$HOME' 'SSH_AUTH_SOCK=$SSH_AUTH_SOCK' 'PKGR=1'"
+name=$(basename $(pwd))
 
-sudo chown -R $USER /opt/py-pkgr
+cacheRoot=/tmp
+environment="'HOME=${HOME}' 'SSH_AUTH_SOCK=${SSH_AUTH_SOCK}' 'PKGR=1'"
+
+sudo mkdir -p /opt/${name}
+sudo chown -R ${USER} /opt/${name}
 
 pkgr package . \
   --env ${environment} \
