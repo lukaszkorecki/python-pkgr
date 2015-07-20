@@ -1,0 +1,6 @@
+bin
+vendor
+include
+lib
+local
+pip-selfcheck.json
