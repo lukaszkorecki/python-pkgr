@@ -4,7 +4,7 @@ First of all you'll need extra ssl packages for python compilation & running the
 app.
 
 ```
-sudo apt-get install -y libssl1.0.0 libssl0.9.8 libreadline5
+sudo apt-get install -y libssl0.9.8 libreadline5
 ```
 
 then pkgr itself:
